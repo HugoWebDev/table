@@ -1,13 +1,15 @@
 import "./App.css";
 import React from "react";
-import UserTable from "./components/table";
+import { Counter, UserTable } from "./components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <UserTable />
+      {/* <UserTable /> */}
+      <Counter name="hugo" />
     </div>
   );
-}
+};
 
 export default App;
